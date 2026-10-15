@@ -47,6 +47,19 @@ section{padding:56px 18px;max-width:760px;margin:auto}
 </style>
 </head>
 
+
+<audio id="loveSong" src="love.mp3" preload="auto" loop></audio>
+
+<script>
+const loveSong = document.getElementById('loveSong');
+
+document.querySelector('.hero .primary').addEventListener('click', () => {
+  loveSong.play().catch(() => {
+    console.log('แตะหน้าจออีกครั้งเพื่อเล่นเพลง');
+  });
+});
+</script>
+ 
 <body>
 
 <header class="hero">
