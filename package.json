@@ -1,0 +1,12 @@
+{
+  "name": "get-bibi-anniversary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pink anniversary surprise website",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

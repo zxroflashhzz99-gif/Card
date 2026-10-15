@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe3ef">
+<title>ถึงบิบิ้ของเก็ต 💗</title>
+<style>
+:root{--pink:#ff79ad;--deep:#c83f78;--soft:#fff0f6;--cream:#fffafc;--text:#71354e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:linear-gradient(180deg,#ffe4ef,#fff8fb 45%,#ffeaf3);overflow-x:hidden}
+button{font:inherit;cursor:pointer;border:0}.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 18px;position:relative;overflow:hidden}
+.glow{position:absolute;width:250px;height:250px;background:#ffb6d2;filter:blur(70px);opacity:.5;border-radius:50%;top:8%;left:-80px}.glow.g2{top:auto;left:auto;bottom:2%;right:-90px;background:#ffc8dc}
+.hero-content{position:relative;max-width:650px}.eyebrow{letter-spacing:2px;font-size:.78rem;color:#bd5681}.heart{font-size:clamp(3.5rem,18vw,7rem);line-height:1.2;filter:drop-shadow(0 8px 12px #f6a6c2)}h1{font-size:clamp(2.1rem,9vw,4.2rem);line-height:1.15;margin:10px 0;color:var(--deep)}.subtitle{font-size:1.05rem;line-height:1.8}.pill{display:inline-block;background:#fff;border:1px solid #ffd0e1;padding:9px 15px;border-radius:999px;margin:12px 0;font-size:.9rem}.primary{background:linear-gradient(135deg,#ff75aa,#e94d8d);color:white;padding:14px 22px;border-radius:999px;box-shadow:0 8px 20px #ee7ba744;font-weight:700;margin-top:12px}.primary:active{transform:scale(.98)}
+section{padding:56px 18px;max-width:760px;margin:auto}.section-title{text-align:center;font-size:1.7rem;color:var(--deep);margin:0 0 8px}.center{text-align:center}.muted{color:#a65b7a;font-size:.92rem;line-height:1.8}.card{background:#ffffffd9;border:1px solid #ffd7e5;border-radius:25px;padding:22px;box-shadow:0 12px 35px #c9578420}.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.photo-slot{border:2px dashed #f3a4c3;border-radius:20px;min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;background:#fff7fb;position:relative;overflow:hidden}.photo-slot img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;display:none}.photo-slot span{font-size:.9rem;color:#b45b80}.photo-slot input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.letter{white-space:pre-line;line-height:2;font-size:1rem}.letter p{margin:0}.seal{font-size:2.2rem;text-align:center;margin-bottom:8px}.memory{display:grid;gap:12px}.memory-item{background:#fff;border-radius:18px;padding:15px;border:1px solid #ffe0eb}.memory-item b{color:#d54f89}.footer{text-align:center;padding:35px 18px 60px;color:#a54f75}.floating{position:fixed;bottom:-30px;animation:floatUp linear forwards;pointer-events:none;z-index:10}@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}.small{font-size:.8rem;color:#b16a87}.divider{text-align:center;color:#f08ab4;margin:22px 0;letter-spacing:7px}
+@media(min-width:600px){.photo-slot{min-height:230px}.card{padding:32px}.letter{font-size:1.06rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="glow"></div><div class="glow g2"></div>
+ <div class="hero-content">
+  <div class="eyebrow">A LITTLE SURPRISE FOR YOU</div>
+  <div class="heart">💗</div>
+  <h1>ถึงบิบิ้ของเก็ต</h1>
+  <p class="subtitle">มีอะไรเล็ก ๆ อยากให้เธอเปิดดูนะคะ<br>ทำให้คนเก่งของเก็ตโดยเฉพาะเลยย 🎀</p>
+  <div class="pill">💌 สุขสันต์วันครบรอบ 4 เดือน</div><br>
+  <button class="primary" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">เปิดจดหมายรักของเก็ต 💌</button>
+  <p class="small">เลื่อนลงไปดูเซอร์ไพรซ์ได้เลยน้า</p>
+ </div>
+</header>
+<section id="photos">
+ <h2 class="section-title">อัลบั้มของเราสองคน 📸</h2>
+ <p class="center muted">แตะกรอบเพื่อเลือกรูปคู่จากโทรศัพท์ได้เลย</p>
+ <div class="photo-grid">
+  <label class="photo-slot"><img alt="รูปคู่ของเรา"><span>＋<br>รูปคู่รูปที่ 1 💞</span><input type="file" accept="image/*" aria-label="เลือกรูปคู่รูปที่ 1"></label>
+  <label class="photo-slot"><img alt="รูปคู่ของเรา"><span>＋<br>รูปคู่รูปที่ 2 🌷</span><input type="file" accept="image/*" aria-label="เลือกรูปคู่รูปที่ 2"></label>
+  <label class="photo-slot"><img alt="รูปคู่ของเรา"><span>＋<br>ความทรงจำของเรา ✨</span><input type="file" accept="image/*" aria-label="เลือกรูปคู่รูปที่ 3"></label>
+  <label class="photo-slot"><img alt="รูปคู่ของเรา"><span>＋<br>รูปที่ทำให้ยิ้มได้ 🧸</span><input type="file" accept="image/*" aria-label="เลือกรูปคู่รูปที่ 4"></label>
+ </div>
+ <p class="small center">รูปที่เลือกจะแสดงบนหน้านี้เท่านั้น หากต้องการให้แฟนเห็นรูปด้วย ให้นำรูปใส่เว็บก่อนเผยแพร่</p>
+</section>
+<section id="letter">
+ <div class="seal">💌</div><h2 class="section-title">จดหมายจากเก็ตถึงที่รัก</h2>
+ <p class="center muted">อ่านให้จบน้า คนเก่งของเก็ต 🥺💗</p>
+ <article class="card letter" style="margin-top:22px">
+ที่รักก บิบิ้ของเก็ต 💗
+
+ขอบคุนที่เธอยังอยู่กับเก็ตน้ะคะ ขอบคุนที่ยังไม่ไปหนาย ขอโทดที่บางครั้งก็ไม่น่ารัก ทำตัวนิสัยไม่ดีไปบ้าง จนเราเกือบเสียกันปายตั้งหลายครั้ง
+
+แต่อยากให้แฟนรู้ว่า ไม่มีวันหนายเบยที่เก็ตไม่รักเธอ เก็ตไม่เคยหมดรักเธอเลยน้ะคะะ 🥺
+
+ขอโทดที่ทำให้เธอคิดว่าเก็ตไม่เหมือนเดิม แต่สำหรับเก็ต คนที่สำคัญ คนที่รัก คนที่อยากให้อยู่ด้วยที่สุด ก็ยังเป็นเธอน้ะคะะ เธอยังคงเป็นคนเก่งง คนน่ารักก คนจ๋วยยของเก็ตตะเม๋อเบยน้ะคะ 🌷
+
+ม่ายว่าอนาคตอารายจาเกิดขึ้น ก็ขอห้ายเราสองคนยังจับมือกันไว้ อยู่ด้วยกัน เรียนรู้กันไปเรื่อย ๆ น้ะคะะ เก็ตอยากจะขอโทดที่เป็นล้านครั้ง แต่ก็ไม่อยากแค่ขอโทด อยากทำให้เธอเห็นด้วยว่าเก็ตอยากเปลี่ยน อยากปรับเพื่อเธอจิงจิง
+
+เก็ตขอบคุนน้ะคะที่เธอยอมเก็ต ยังอยู่ ยังไม่ไปหนาย เก็ตขอห้ายคนข้าง ๆ เก็ตเป็นเธอไปตลอดเบยน้ะคะ เก็ตม่ายอยากเจอใคใคแย้วว อยู่ด้วยกางปายนานนานนนานนานเบยยน้ะที่รักก 🫶🏻
+
+สุขสันต์วันครบรอบ 4 เดือนนน้ะคะะ 💞
+เก็ตรักเธอม้ากกมากมากมากเบยยน้ะคะคนเก่งงง
+รักทิ้สู้ดดดในโลกเบยค่ะะ 💗
+
+<div class="divider">♡ ♡ ♡</div>
+<div style="text-align:center;font-size:1.1rem;color:#d64f8a;font-weight:700">จากเก็ต คนที่รักบิบิ้ที่สุด 💖</div>
+ </article>
+</section>
+<section>
+ <h2 class="section-title">คำสัญญาเล็ก ๆ ของเก็ต 🌸</h2>
+ <div class="memory">
+  <div class="memory-item">🩷 <b>จะพยายามรับฟัง</b><br><span class="muted">คุยกันดี ๆ และฟังความรู้สึกของกันและกัน</span></div>
+  <div class="memory-item">🌷 <b>จะค่อย ๆ ปรับตัว</b><br><span class="muted">ไม่ใช่แค่พูดว่าขอโทด แต่จะพยายามทำให้เห็นด้วย</span></div>
+  <div class="memory-item">🫶🏻 <b>จะจับมือเรียนรู้ไปด้วยกัน</b><br><span class="muted">ค่อย ๆ เติบโตไปด้วยกัน ด้วยความรักและความเข้าใจ</span></div>
+ </div>
+ <p class="center" style="margin-top:26px">ถ้าพร้อมแล้ว กดรับหัวใจจากเก็ตได้เลย 💝</p>
+ <div class="center"><button class="primary" id="heartBtn">รับหัวใจของเก็ต 💗</button><p id="thanks" class="muted" aria-live="polite"></p></div>
+</section>
+<footer class="footer"><div style="font-size:2rem">💗🎀💗</div><b>รักบิบิ้มากที่สุดเลยย</b><p>สุขสันต์วันครบรอบ 4 เดือน · 16 มิถุนายน 2569</p><span class="small">ทำด้วยความรักจากเก็ต</span></footer>
+<script>
+document.querySelectorAll('.photo-slot input').forEach(input=>input.addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const slot=e.target.closest('.photo-slot');const img=slot.querySelector('img');img.src=URL.createObjectURL(f);img.style.display='block';slot.querySelector('span').style.display='none'}));
+function floatHeart(){const el=document.createElement('span');el.className='floating';el.textContent=['💗','💕','💖','🌸','✨'][Math.floor(Math.random()*5)];el.style.left=Math.random()*95+'vw';el.style.fontSize=(18+Math.random()*22)+'px';el.style.animationDuration=(4+Math.random()*3)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),7500)}
+document.getElementById('heartBtn').addEventListener('click',()=>{for(let i=0;i<22;i++)setTimeout(floatHeart,i*100);document.getElementById('thanks').textContent='เย้ รับหัวใจไปเยอะ ๆ เลยน้าา เก็ตขอให้เรายิ้มด้วยกันไปนาน ๆ 💗🥹';});
+</script>
+</body></html>
