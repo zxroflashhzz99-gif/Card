@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="th">
 <head>
@@ -47,20 +48,10 @@ section{padding:56px 18px;max-width:760px;margin:auto}
 </style>
 </head>
 
-
-<audio id="loveSong" src="love.mp3" preload="auto" loop></audio>
-
-<script>
-const loveSong = document.getElementById('loveSong');
-
-document.querySelector('.hero .primary').addEventListener('click', () => {
-  loveSong.play().catch(() => {
-    console.log('แตะหน้าจออีกครั้งเพื่อเล่นเพลง');
-  });
-});
-</script>
- 
 <body>
+
+<!-- เพลงประกอบ -->
+<audio id="loveSong" src="love.mp3" preload="auto" loop></audio>
 
 <header class="hero">
  <div class="glow"></div>
@@ -71,15 +62,15 @@ document.querySelector('.hero .primary').addEventListener('click', () => {
   <h1>ถึงบิบิ้ของเก็ต</h1>
   <p class="subtitle">มีอะไรเล็ก ๆ อยากให้เธอเปิดดูนะคะ<br>ทำให้คนเก่งของเก็ตโดยเฉพาะเลยย 🎀</p>
   <div class="pill">💌 สุขสันต์วันครบรอบ 4 เดือน</div><br>
-  <button class="primary" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">เปิดจดหมายรักของเก็ต 💌</button>
+  <button class="primary" id="openLetterBtn">เปิดจดหมายรักของเก็ต 💌</button>
   <p class="small">เลื่อนลงไปดูเซอร์ไพรซ์ได้เลยน้า</p>
+  <p class="small" id="musicStatus" aria-live="polite"></p>
  </div>
 </header>
 
 <section id="photos">
  <h2 class="section-title">อัลบั้มของเราสองคน 📸</h2>
  <p class="center muted">รวมความทรงจำของเราสองคนไว้ตรงนี้ 💗</p>
-
  <div class="photo-grid">
   <div class="photo-slot">
    <img src="IMG_0187.jpeg" alt="รูปคู่ของเรา รูปที่ 1">
@@ -146,6 +137,21 @@ document.querySelector('.hero .primary').addEventListener('click', () => {
 </footer>
 
 <script>
+const loveSong = document.getElementById('loveSong');
+const musicStatus = document.getElementById('musicStatus');
+
+document.getElementById('openLetterBtn').addEventListener('click', async () => {
+  document.querySelector('#letter').scrollIntoView({behavior:'smooth'});
+
+  try {
+    await loveSong.play();
+    musicStatus.textContent = '🎵 กำลังเล่นเพลงของเรา 💗';
+  } catch (error) {
+    musicStatus.textContent = 'เพลงยังเล่นไม่ได้ ตรวจสอบไฟล์ love.mp3 ใน GitHub นะคะ';
+    console.error('Music playback failed:', error);
+  }
+});
+
 function floatHeart(){
  const el=document.createElement('span');
  el.className='floating';
